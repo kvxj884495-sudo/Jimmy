@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Mostasmer Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body, html {
+            direction: ltr !important;
+            text-align: left !important;
+        }
+        .navbar, .main-content, .footer, .footer-container, .footer-section, .footer-logo, .social-links, .nav-menu, .nav-logo, .footer-links, .footer-contact {
+            text-align: left !important;
+            direction: ltr !important;
+        }
+        .nav-menu, .footer-links, .footer-contact, .social-links {
+            justify-content: flex-start !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                    <img src="./imgs/Logo.png" alt="Mostasmer Logo" class="logo-img">
+                    <span class="logo-text">Mostasmer</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="properties.html" class="nav-link active">Properties</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>All Properties</h1>
+                <div class="search-filter-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search by title, address, or price...">
+                    </div>
+                    <div class="filters">
+                        <select id="typeFilter">
+                            <option value="all">All Types</option>
+                            <option value="apartment">Apartments (شقق)</option>
+                            <option value="villa">Villas (فلل)</option>
+                            <option value="townhouse">Townhouses (توين هاوس)</option>
+                            <option value="duplex">Duplexes (دوبلكس)</option>
+                            <option value="twin house">Twin Houses (بيوت توأمية)</option>
+                            <option value="penthouse">Penthouses (بنتهاوس)</option>
+                            <option value="ivilla">iVillas (أيفيلا)</option>
+                            <option value="land">Land (أراضي)</option>
+                            <option value="hotel apartment">Hotel Apartments (شقق فندقية)</option>
+                            <option value="whole building">Whole Buildings (مباني كاملة)</option>
+                            <option value="palace">Palaces (قصور)</option>
+                            <option value="roof">Roofs (أسطح)</option>
+                            <option value="chalet">Chalets (شاليهات)</option>
+                            <option value="full floor">Full Floors (أدوار كاملة)</option>
+                            <option value="bulk sale units">Bulk Sale Units (وحدات بيع جملة)</option>
+                            <option value="half floor">Half Floors (أدوار نصفية)</option>
+                            <option value="bungalow">Bungalows (بنجلوس)</option>
+                            <option value="cabin">Cabins (كابينات)</option>
+                        </select>
+                        <select id="locationFilter">
+                            <option value="all">All Locations</option>
+                            <option value="Smouha">Smouha (سموحة)</option>
+                            <option value="Sporting">Sporting (سبورتنج)</option>
+                            <option value="Celopatra">Celopatra (كليوباترا)</option>
+                            <option value="Sidi Gaber">Sidi Gaber (سيدي جابر)</option>
+                            <option value="Mostafa Kamel">Mostafa Kamel (مصطفى كامل)</option>
+                            <option value="Gleem">Gleem (جليم)</option>
+                            <option value="Stanley">Stanley (ستانلي)</option>
+                            <option value="Miami">Miami (ميامي)</option>
+                            <option value="Louran">Louran (لوران)</option>
+                            <option value="San Stefano">San Stefano (سان ستيفانو)</option>
+                            <option value="Roushdy">Roushdy (رشدي)</option>
+                            <option value="Kafr Abdo">Kafr Abdo (كفر عبده)</option>
+                            <option value="Azarita">Azarita (الأزاريطة)</option>
+                            <option value="Mandara">Mandara (المنارة)</option>
+                            <option value="Borg El Arab">Borg El Arab (برج العرب)</option>  
+                            <option value="Fleming">Fleming (فلمنج)</option>
+                            <option value="Moharam Bek">Moharam Bek (محرم بك)</option>
+                            <option value="Elmanshia">Elmanshia (المنشيه)</option>
+                            <option value="Camp Shezar">Camp Shezar (كامب شيزار)</option>
+                        
+                            
+                        
+                        </select>
+                        <select id="transactionFilter">
+                            <option value="all">All Transactions</option>
+                            <option value="sale">Sale (بيع)</option>
+                            <option value="rent">Rent (ايجار)</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+            
+            <div id="propertiesContainer" class="properties-grid">
+                <!-- Properties will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="imgs/Logo.png" alt="Mostasmer Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">Mostasmer</span>
+                </div>
+                <p class="footer-description">Your trusted partner in real estate. Find your dream property with us.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> +20 1222145530</li>
+                    <li><i class="fas fa-envelope"></i> gemyl5510@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                  
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mostasmer. Ahmed jimmy.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

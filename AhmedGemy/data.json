@@ -1,0 +1,277 @@
+{
+  "properties": [
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 3,
+      "area": 199,
+      "address": "Fleming, Alexandria(فلمنج ,الإسكندرية)",
+      "price": "6,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "  شقه مميزه للبيع ترام مباشر 199م ",
+      "description": "شقة 199متر فلمنج ترام مباشر\n3 غرف و 2 حمام\nو ريسيبشن قطعتين و مطبخ امريكاني\nمباني 2011\nرخصة و حصة في الارض\nشقة 199متر بالمرافق\nالعقار 12دور\nو الشقة في الدور ال9\n3شقق في الدور\nو 2 اسانسير\nجميع مطلاتها على الترام\nالسعر 6,500,000 تفاوض بسيط",
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop",
+      "images": [
+        "imgs/WhatsApp Image 2026-01-12 at 1.56.52 AM.jpeg",
+        "imgs/WhatsApp Image 2026-01-12 at 1.56.53 AM.jpeg",
+        "imgs/WhatsApp Image 2026-01-12 at 1.56.54 AM.jpeg",
+        "imgs/WhatsApp Image 2026-01-12 at 1.56.56 AM.jpeg",
+        "imgs/WhatsApp Image 2026-01-12 at 1.57.01 AM.jpeg",
+        "imgs/WhatsApp Image 2026-01-12 at 1.57.11 AM.jpeg"
+      ]
+    },
+    {
+      "type": "apartment",
+      "transaction": "rent",
+      "bathrooms": 2,
+      "rooms": 2,
+      "area": 136,
+      "address": "Four season san stafano, Alexandria (سان ستيفانو ,الإسكندرية)",
+      "price": "4,000 EGP/Daily",
+      "phone": "+20 1222145530",
+      "title": " شقه للايجار بالفورسيزون سان ستيفانو 136م ",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p1.jpeg",
+        "imgs1/p2.jpeg",
+        "imgs1/p3.jpeg",
+        "imgs1/p4.jpeg",
+        "imgs1/p5.jpeg",
+        "imgs1/p6.jpeg"
+      ],
+      "description": "شقة للايجار المفروش 136 م – فورسيزون \"سان ستيفانو\" – فيو بحر\n* غرفتين -رسيبشن قطعتين -مطبخ -2حمام \n* الدور 17 و العقار 31 دور \n* 2 اسانسير \n* تشطيب ألترا لوكس\n* فيو دايركت علي البحر\n* عدادات كاملة \n* مرخصة \n* مباني حديث\n* يوجد باكية جراج بسعر منفصل"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 1,
+      "rooms": 2,
+      "area": 95,
+      "address": "Alexandria, Egypt ( Alexandria,الإسكندرية)",
+      "price": "2,300,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "فرصه مميزه مكتب اداري / عياده للبيع",
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p7.jpeg",
+        "imgs1/p8.jpeg",
+        "imgs1/p9.jpeg",
+        "imgs1/p10.jpeg",
+        "imgs1/p11.jpeg",
+        "imgs1/p12.jpeg"
+      ],
+      "description": " فرصة مميزة مكتب إداري / عيادة للبيع 95متر فيو مفتوح\n* 2 غرفة + ريسبشن + مطبخ + حمام\n* الدور 1 و العقار 13 أدوار\n* 2 اسانسير \n* تشطيب سوبر لوكس \n* عدادات كاملة \n* مرخصة \n* مباني حديثة \n* موقع مميز جدا"
+    },
+    {
+      "type": "villa",
+      "transaction": "sale",
+      "bathrooms": 4,
+      "rooms": 5,
+      "area": 1.170,
+      "address": "king Marout, Alexandria (كينج ماريوط ,الإسكندرية)",
+      "price": "34,000,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "  فيلا كينج ماريوط مرخصة عقد ازرق افخم مناطق الكينج 100م ",
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p13.jpeg",
+        "imgs1/p14.jpeg",
+        "imgs1/p15.jpeg",
+        "imgs1/p16.jpeg",
+        "imgs1/p17.jpeg",
+        "imgs1/p18.jpeg"
+      ],
+      "description": "villa good for sale. عقار من نوع  villa مكون من 5 غرف و4 حمامات، بمساحة 1.170 م². يقع في king Marout, Alexandria (كينج ماريوط ,الإسكندرية). السعر: 34,000,000 EGP/month."
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 3,
+      "area": 190,
+      "address": ".Sidi bishr ,Alexandra ( سيدي بشر ,الإسكندرية)",
+      "price": "5,000,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "شقة فاخره 190م ش خليل حمادة رئيسي",
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p20.jpeg",
+        "imgs1/p21.jpeg",
+        "imgs1/p22.jpeg",
+        "imgs1/p23.jpeg",
+        "imgs1/p24.jpeg",
+        "imgs1/p25.jpeg"
+      ],
+      "description": "شقة فاخره 190م ش خليل حمادة رئيسي\n3 غرف و2 حمام  ريسبشن 4 قطع\nالدور 14 والعقار 16 ادوار\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 5,
+      "area": 200,
+      "address": "Elmanshia,Alexandria (المنشية,الإسكندرية)",
+      "price": "4,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "شقة في المنشية 200 متر الدور الثالث مباني1970 مع 3 ريسيبشن ومرخصه",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p26.jpeg",
+        "imgs1/p27.jpeg",
+        "imgs1/p28.jpeg",
+        "imgs1/p29.jpeg",
+        "imgs1/p30.jpeg",
+        "imgs1/p31.jpeg"
+      ],
+      "description": " شقة في المنشية 200 متر الدور الثالث مباني1970 مع 3 ريسيبشن ومرخصه\n5 غرف و2 حمام  ريسبشن 3 قطع\nالدور 3 والعقار 5 ادوار\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 1,
+      "rooms": 3,
+      "area": 145,
+      "address": ".Sidi bishr ,Alexandra ( سيدي بشر ,الإسكندرية)",
+      "price": "2,850,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "\" شقة مميزة 145متر  بعد نفق سيدي بشر  مباشرا ",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p32.jpeg",
+        "imgs1/p33.jpeg",
+        "imgs1/p34.jpeg",
+        "imgs1/p35.jpeg",
+        "imgs1/p36.jpeg",
+        "imgs1/p37.jpeg"
+      ],
+      "description": " شقة مميزة 145متر  بعد نفق سيدي بشر  مباشرا \n3 غرف و1 حمام ريسبشن قطعتين ومطبخ\n 1 2\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 3,
+      "area": 220,
+      "address": " louran,Alexandria (لوران ,الإسكندرية)",
+      "price": "7,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "شقة 220متر بلكورنيه على البحر مباشر بلوران ",
+      "image": "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p38.jpeg",
+        "imgs1/p39.jpeg",
+        "imgs1/p40.jpeg",
+        "imgs1/p41.jpeg",
+        "imgs1/p42.jpeg",
+        "imgs1/p43.jpeg",
+        "imgs1/p44.jpeg"
+      ],
+      "description": " شقة 220متر بلكورنيه على البحر مباشر بلوران \n3 غرف و2 حمام ريسبشن 4 قطع ومطبخ امريكاني\nالدور 4 \nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms":2,
+      "rooms": 4,
+      "area": 185,
+      "address": " Stanley,Alexandria (ستانلي ,الإسكندرية)",
+      "price": "14,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "  شقه مفروشة مميزه للبيع ستانلي  مباشر 185م ",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p45.jpeg",
+        "imgs1/p46.jpeg",
+        "imgs1/p47.jpeg",
+        "imgs1/p48.jpeg",
+        "imgs1/p49.jpeg",
+        "imgs1/p50.jpeg"
+      ],
+      "description": "  اربع غرف  2 حمام  2 بلكونه  ريسبشن 4 قطع   مع جراج  كاملة العدادات الدور   ال 8  اطلاله على البحر   مدخل فندقي رائع   جاهزة للتسليم   تشطيب سوبر لوكس واللوكيشن روعة عرض ميتفوتش Stanley,Alexandria (ستانلي ,الإسكندرية). السعر: 14,500,000 EGP."
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 2,
+      "area": 160,
+      "address": "Smouha,Alexandria (سموحة,الإسكندرية)",
+      "price": "5,850,000 EGP",
+      "phone": "+20 1222145530",
+      "title": " شقة للبيع بسموحة 160م  شارع مصطفى كامل",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p51.jpeg",
+        "imgs1/p52.jpeg",
+        "imgs1/p53.jpeg",
+        "imgs1/p54.jpeg",
+        "imgs1/p55.jpeg",
+        "imgs1/p56.jpeg"
+      ],
+      "description": " شقة للبيع بسموحة 160م  شارع مصطفى كامل\n2  غرف و2 حمام  ريسبشن 3 قطع و2 اسانسير حديث حراسة24/7\nالدور 2 والعقار 14 ادوار\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "rent",
+      "bathrooms": 1,
+      "rooms": 2,
+      "area": 110,
+      "address": "Moharam Bek,Alexandria (محرم بك,الإسكندرية)",
+      "price": "9,000 EGP/month",
+      "phone": "+20 1222145530",
+      "title": "شقة للايجار بموقع مميز محرم بك 110م ",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p57.jpeg",
+        "imgs1/p58.jpeg",
+        "imgs1/p59.jpeg",
+        "imgs1/p60.jpeg",
+        "imgs1/p61.jpeg"
+      ],
+      "description": " شقة للايجار بموقع مميز محرم بك 110م \n2   بغرف و1 حمام ريسبشن  قطعه ومطبخ مع حراسه 24/7  مع الفرش 9,000\nالعقار 8 حديثه ادوار\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 1,
+      "rooms":2,
+      "area": 130,
+      "address": "Fleming, Alexandria(فلمنج ,الإسكندرية)",
+      "price": "3,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": " شقه فاخره 130متر بفلمنج ترام مباشر ",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p63.jpeg",
+        "imgs1/p64.jpeg",
+        "imgs1/p65.jpeg",
+        "imgs1/p66.jpeg",
+        "imgs1/p67.jpeg",
+        "imgs1/p68.jpeg"
+      ],
+      "description": " شقه فاخره 130متر بفلمنج ترام مباشر \n2 غرف و1 حمام و 3 ريسبشن  ومطبخ يمكنك متاح غلق غرقه3 تصبح 3 غرف\n 1 2\nتشطيب سوبر لوكس\nعدادات كاملة\nمرخصة\nمباني حديثة\nموقع مميز جدا"
+    },
+    {
+      "type": "apartment",
+      "transaction": "sale",
+      "bathrooms": 2,
+      "rooms": 3,
+      "area": 145,
+      "address": "camp Shezar, Alexandria (,كامب شيزار,الإسكندرية)",
+      "price": "6,500,000 EGP",
+      "phone": "+20 1222145530",
+      "title": "شقة مميزه على البحر مباشره 145م كامب شيزار",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop",
+      "images": [
+        "imgs1/p69.jpeg",
+        "imgs1/p70.jpeg",
+        "imgs1/p71.jpeg",
+        "imgs1/p72.jpeg",
+        "imgs1/p73.jpeg",
+        "imgs1/p74.jpeg"
+      ],
+      "description":" شقة مميزه جدا على البحر بسعر ممتاز في كامب شزار 2غرف+واحده 2حمام الدور ال 9 العقار 12 دور تشطيب سوبر لوكس عدادات كاملة مرخصة مباني حديثة موقع مميز جدا"
+    }
+  ]
+}

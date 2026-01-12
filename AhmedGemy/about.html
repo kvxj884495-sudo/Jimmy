@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mostasmer Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body, html {
+            direction: ltr !important;
+            text-align: left !important;
+        }
+        .navbar, .main-content, .footer, .footer-container, .footer-section, .footer-logo, .social-links, .nav-menu, .nav-logo, .footer-links, .footer-contact {
+            text-align: left !important;
+            direction: ltr !important;
+        }
+        .nav-menu, .footer-links, .footer-contact, .social-links {
+            justify-content: flex-start !important;
+        }
+        .about-section {
+            background: rgba(255,255,255,0.75);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            color: #111;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+        .about-section h2 {
+            color: #000000;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .about-section p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-card {
+            background: rgba(248,249,250,0.85);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card i {
+            font-size: 3em;
+            color: #262f50;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            color: #262f50;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                    <img src="./imgs/Logo.png" alt="Mostasmer Logo" class="logo-img">
+                    <span class="logo-text">Mostasmer</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="properties.html" class="nav-link">Properties</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>About Mostasmer</h1>
+            </header>
+
+            <div class="about-section">
+                <h2>Welcome to Mostasmer Real Estate</h2>
+                <p>
+                    Mostasmer   is a leading real estate company in Egypt, specializing in providing exceptional property solutions for both buyers and sellers. With years of experience in the market, we have built a reputation for excellence, integrity, and customer satisfaction.
+                </p>
+                <p>
+                    Our mission is to help you find your dream property or sell your property with ease. We offer a wide range of properties including apartments, villas, townhouses, commercial spaces, and investment opportunities across Egypt's most desirable locations.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>Why Choose Mostasmer?</h2>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Trusted & Reliable</h3>
+                        <p>We are committed to providing honest and transparent real estate services you can trust.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Prime Locations</h3>
+                        <p>Access to the best properties in Cairo, New Cairo, North Coast, and other premium locations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Expert Team</h3>
+                        <p>Our experienced team of real estate professionals is here to guide you every step of the way.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Easy Search</h3>
+                        <p>Advanced search and filter options to help you find exactly what you're looking for.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>We're here to help whenever you need us with responsive customer support.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Market Insight</h3>
+                        <p>Stay informed with our expert market analysis and property valuations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Services</h2>
+                <p>
+                    <strong>Property Sales:</strong> Find your perfect home or investment property from our extensive collection.
+                </p>
+                <p>
+                    <strong>Property Rentals:</strong> Discover rental properties for short-term or long-term stays.
+                </p>
+                <p>
+                    <strong>Property Consultations:</strong> Get expert advice on property investment, market trends, and legal matters.
+                </p>
+                <p>
+                    <strong>Property Management:</strong> Full-service property management for landlords and property owners.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="imgs/Logo.png" alt="Mostasmer Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">Mostasmer</span>
+                </div>
+                <p class="footer-description">Your trusted partner in real estate. Find your dream property with us.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> +20 1222145530</li>
+                    <li><i class="fas fa-envelope"></i> gemyl5510@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+  <h3 class="footer-title">Follow Us</h3>
+
+  <div class="social-links">
+    <a href=" https://www.facebook.com/MostasmerRealEstate/" class="social-link" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://twitter.com/yourpage" class="social-link" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" class="social-link" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/201222145530?text " class="social-link" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mostasmer. Ahmed jimmy.</p>
+        </div>
+    </footer>
+</body>
+</html>

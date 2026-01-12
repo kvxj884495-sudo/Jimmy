@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="index.html" style="text-decoration:none; display:flex; align-items:center; gap:12px;">
+          <img src="./imgs/Logo.png" alt="Mostasmer Logo" class="logo-img">
+          <span class="logo-text">Mostasmer</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="container">
+      <div id="propertyDetail" class="property-detail-container">
+        <!-- Property details will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="imgs/Logo.png" alt="Mostasmer Logo" class="footer-logo-img">
+          <span class="footer-logo-text">Mostasmer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+$(document).ready(function(){
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get('id'), 10);
+  if (isNaN(id)) {
+    $('#propertyDetail').html('<div class="no-results">Property ID missing or invalid.</div>');
+    return;
+  }
+
+  $.getJSON('data.json', function(data){
+    const props = data.properties || [];
+    if (id < 0 || id >= props.length) {
+      $('#propertyDetail').html('<div class="no-results">Property not found.</div>');
+      return;
+    }
+
+    const property = props[id];
+    const imageUrls = (Array.isArray(property.images) && property.images.length) ? property.images : (property.image ? [property.image] : ['https://via.placeholder.com/1200x800?text=No+Image']);
+    const mainImage = imageUrls[0];
+
+    const typeLabel = property.type || '';
+    const transactionLabel = property.transaction === 'sale' ? 'Sale (بيع)' : 'Rent (ايجار)';
+
+    let html = `
+      <div class="property-card property-card--detail">
+        <div class="property-image-container" style="height:auto;">
+          <img src="${encodeURI(mainImage)}" alt="${typeLabel}" class="property-image" id="detailMainImage" style="height:500px; width:100%; object-fit:cover; cursor:pointer;">
+          <div class="thumbnails" style="position:relative; bottom:0; background:transparent; margin-top:8px;">
+            ${imageUrls.map((u, i) => `<img src="${encodeURI(u)}" class="thumb" data-idx="${i}" style="width:80px; height:60px;" />`).join('')}
+          </div>
+          <div class="property-type-badge">${typeLabel}</div>
+          <div class="property-badge">${transactionLabel}</div>
+        </div>
+        <div class="property-body">
+          <div class="property-price">${property.price}</div>
+          <div class="property-title">${property.title || typeLabel}</div>
+          <p class="property-description">${property.description || ''}</p>
+          <div class="property-details" style="margin-top:15px;">
+            <div class="detail-item"><strong>Rooms:</strong> ${property.rooms}</div>
+            <div class="detail-item"><strong>Baths:</strong> ${property.bathrooms}</div>
+            <div class="detail-item"><strong>Area:</strong> ${property.area} sqm</div>
+            <div class="detail-item" style="margin-top:10px;"><strong>Address:</strong> ${property.address}</div>
+            <div class="detail-item" style="margin-top:10px;"><strong>Phone:</strong> <a href="https://wa.me/${(property.phone||'').replace(/[^0-9]/g,'')}" target="_blank">${property.phone}</a></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:20px;">
+        <a href="index.html" class="property-phone">Back to Listings</a>
+      </div>
+    `;
+
+    $('#propertyDetail').html(html);
+
+    // Thumbnail click: change main image
+    $('#propertyDetail').on('click', '.thumb', function(e){
+      e.stopPropagation();
+      const idx = parseInt($(this).attr('data-idx'), 10) || 0;
+      $('#detailMainImage').attr('src', encodeURI(imageUrls[idx]));
+    });
+
+    // Click main image open gallery
+    $('#propertyDetail').on('click', '#detailMainImage', function(){
+      openLocalGallery(imageUrls, 0);
+    });
+
+    // Local lightbox functions (copied/adapted)
+    function createLocalLightboxIfNeeded(){
+      if ($('#lightboxOverlayLocal').length) return;
+      const lb = $("<div id='lightboxOverlayLocal' class='lightbox-overlay' style='display:none'><div class='lightbox-content'><button class='lightbox-close' title='Close'>&times;</button><button class='lightbox-prev' title='Previous'>&#10094;</button><img class='lightbox-image' src='' alt='Image'><button class='lightbox-next' title='Next'>&#10095;</button><div class='lightbox-actions'><a class='lightbox-open' href='#' target='_blank' rel='noopener noreferrer'>Open</a><a class='lightbox-download' href='#' download>Download</a></div><div class='lightbox-thumbs'></div></div></div>");
+      $('body').append(lb);
+      $(document).on('click', '#lightboxOverlayLocal .lightbox-close, #lightboxOverlayLocal', function(e){ if (e.target.id === 'lightboxOverlayLocal' || $(e.target).hasClass('lightbox-close')) $('#lightboxOverlayLocal').fadeOut(200); });
+      $(document).on('click', '#lightboxOverlayLocal .lightbox-prev', function(){ localPrev(); });
+      $(document).on('click', '#lightboxOverlayLocal .lightbox-next', function(){ localNext(); });
+      $(document).on('click', '#lightboxOverlayLocal .lightbox-thumbs img', function(){ const idx = $(this).index(); localShowIndex(idx); });
+      $(document).on('keydown', function(e){ if ($('#lightboxOverlayLocal').is(':visible')) { if (e.key === 'ArrowLeft') localPrev(); else if (e.key === 'ArrowRight') localNext(); else if (e.key === 'Escape') $('#lightboxOverlayLocal').fadeOut(200); }});
+    }
+
+    let localImgs = [], localIdx = 0;
+    function openLocalGallery(imgs, start){ createLocalLightboxIfNeeded(); localImgs = imgs; localIdx = start||0; localShow(); }
+    function localShow(){ const overlay = $('#lightboxOverlayLocal'); const current = encodeURI(localImgs[localIdx]); overlay.find('.lightbox-image').attr('src', current); overlay.find('.lightbox-open').attr('href', current); overlay.find('.lightbox-download').attr('href', current).attr('download', (current.split('/').pop()||'image')); const thumbs = overlay.find('.lightbox-thumbs').empty(); localImgs.forEach((u,i)=>{ const t = $(`<img src="${encodeURI(u)}" class="${i===localIdx?'active':''}">`); thumbs.append(t); }); overlay.fadeIn(200); }
+    function localShowIndex(i){ localIdx = i; localShow(); }
+    function localNext(){ localIdx = (localIdx+1)%localImgs.length; localShow(); }
+    function localPrev(){ localIdx = (localIdx-1+localImgs.length)%localImgs.length; localShow(); }
+
+  }).fail(function(){
+    $('#propertyDetail').html('<div class="no-results">Error loading property data.</div>');
+  });
+
+});
+</script>
+</body>
+</html>
